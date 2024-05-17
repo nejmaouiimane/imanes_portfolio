@@ -37,7 +37,7 @@ const Header = () => {
     }, []);
 
     return (
-        <nav className='bg-slate-900 h-full w-18 fixed z-50 flex flex-col gap-8'>
+<nav className='bg-slate-900 h-full w-18 fixed z-50 flex flex-col gap-8'>
             ÷            <div className="flex items-center justify-center p-4">
                 <svg width="60" height="60" viewBox="0 0 150 229" className="looka-1j8o68f">
                     {/* SVG Content */}
@@ -66,7 +66,23 @@ const Header = () => {
                     </a>
                 </div>
             </div>
-        </nav>
+        </nav>        // <nav className='bg-slate-600 h-[100vh] fixed    w-[10vw] flex flex-col '>
+        //     <div className='h-[20vh] bg-red-200'>
+        //         <img src="" alt="" />
+        //     </div>
+        //     <div>
+        //     <a href="">Home</a>
+        //     </div>
+        //     <div>
+        //     <a href="">About</a>
+        //     </div>
+        //     <div>
+        //     <a href="">Project</a>
+        //     </div>
+        //     <div>
+        //     <a href="">Contact </a>
+        //     </div>
+        // </nav>
     );
 };
 

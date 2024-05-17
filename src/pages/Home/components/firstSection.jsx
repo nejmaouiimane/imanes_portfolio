@@ -13,9 +13,23 @@ import { FaBootstrap } from "react-icons/fa";
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
+import { FiFigma } from "react-icons/fi";
+import backend from '../../../assets/svg/backend.svg';
+import frontend from '../../../assets/svg/frontend.svg';
+import design from '../../../assets/svg/design.svg';
+import { PiFileHtmlDuotone } from "react-icons/pi";
+import { SiCsswizardry } from "react-icons/si";
+import { RiReactjsFill } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { BiSolidFileCss } from "react-icons/bi";
+import { FaLaravel } from "react-icons/fa";
+import { BsDatabaseFillCheck } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-
-import myphone from '../../../assets/img/myphone.jpg'
+import myphone from '../../../assets/img/myphone.jpg';
+import { SiPhp } from "react-icons/si";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const FirstSection = () => {
     const [test, setTest] = useContext(MyContext)
@@ -36,8 +50,24 @@ export const FirstSection = () => {
     return (
         <>
             <Header />
-            <body className=' text-white '>
+            <body className=' text-white relative  '>
                 {/* herosection */}
+                {/*  */}
+                <div className="icons absolute flex right-1 px-7 py-3    text-2xl gap-x-4 text-gray-400">
+                    <a href="" className='hover:text-teal-200'>
+                        <span><FaLinkedin /></span>
+                    </a>
+                    <a href="" className='hover:text-teal-200'>
+                        <span><MdEmail /> </span>
+                    </a>
+                    <a href="" className='hover:text-teal-200'>
+                        <span><FaInstagram /></span>
+                    </a>
+                    <a href="" className='hover:text-teal-200'>
+                        <span><FaGithub /></span>
+                    </a>
+                </div>
+                {/*  */}
                 <section className="home w-full h-[100vh] p-8 px-52 flex flex-col justify-center items-center">
                     <div className=' w-[60vw] h-[42vh] flex flex-col justify-between '>
                         <h1 className='text-md text-teal-200  ' >Hello, and Welcome</h1>
@@ -70,55 +100,99 @@ export const FirstSection = () => {
                             </div>
                             <p className='font-thin text-lg    '>
                                 Front-end web developer with a passion for transforming ideas into tangible, user-friendly web experiences. I love the challenge of taking a concept from scratch and building it into a beautiful and functional reality. My expertise lies in crafting the visual elements and interactive features that users see and interact with on websites and applications.</p>
-                            <h1>Skills</h1>
+
                             {/* had l3ayba y9dar ykoun fiha prob */}
-                            <div className=' flex flex-row  '>
-                                <div className='left w-[60%] bg-red-300 flex flex-wrap'>
-                                    <div className='w-[50%] h-[50%] bg-yellow-200'>html , css , javascript , php</div>
-                                    <div className='w-[50%] h-[50%] bg-yellow-300'>bootstrap, sass, tailwind</div>
-                                    <div className='w-[50%] h-[50%] bg-yellow-400'>react js , laravel </div>
-                                    <div className='w-[50%] h-[50%] bg-yellow-500'>git , github</div>
+                            <div className=' flex flex-row py-8  '>
+                                <div className='right  flex flex-col gap-5  w-[50%]'>
+                                    <ins className='text-3xl italic font-thin    '>What i do ?</ins>
 
-
-                                </div>
-                                <div className='right w-[40%]'>
-                                    <h1 className='text-2xl '>What i do ?</h1>
                                     <div className='flex flex-row'>
-                                        <div className='w-[30%] text-5xl'> <FaCloudDownloadAlt /></div>
+                                        <div className='w-[30%] text-5xl'>
+                                            <img className='w-24 ' src={design} alt="" srcset="" />
+                                        </div>
                                         <div>
                                             <h1 className='text-2xl '>WEB DESISGN</h1>
                                             <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                                             <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                                         </div>
                                     </div>
-                                    {/*  */}
+
                                     <div className='flex flex-row'>
-                                        <div className='w-[30%] text-5xl'> <FaCloudDownloadAlt /></div>
-                                        <div>
-                                            <h1 className='text-2xl '>Front-end Development</h1>
-                                            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                                            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                                        <div className='w-[30%] text-5xl'>
+                                            <img className='w-24 ' src={backend} alt="" srcset="" />
                                         </div>
-                                    </div>
-                                    {/*  */}
-                                    <div className='flex flex-row'>
-                                        <div className='w-[30%] text-5xl'> <FaCloudDownloadAlt /></div>
                                         <div>
-                                            <h1 className='text-2xl '>Back-end Development</h1>
+                                            <h1 className='text-2xl '>Web Development</h1>
                                             <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                                             <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                                         </div>
                                     </div>
 
                                 </div>
+                                <div className='left w-[50%] flex flex-wrap border-l-2 px-6  '>
+                                    <ins className='text-3xl italic  font-thin  '>Skills & Tools :</ins>
+                                    <div className='w-[75%] h-[50%] flex flex-wrap  text-5xl gap-4 '>
+
+                                        <div className='hover:text-teal-200'>
+                                            < PiFileHtmlDuotone />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <BiSolidFileCss />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <IoLogoJavascript />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <FaBootstrap />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <RiReactjsFill />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <RiTailwindCssFill />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <FiFigma />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <FaLaravel />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <SiPhp />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <BsDatabaseFillCheck />
+                                        </div>
+                                        <div className='hover:text-teal-200'>
+                                            <FaGithub />
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+
+                                </div>
+
+
                             </div>
 
                         </div>
                     </div>
                 </section>
                 {/* project */}
-                <h1 className='myprojects px-40 text-5xl w-48  text-left  rounded-md  py3  font-bold'> <span className='text-teal-300 '> My </span>Projects</h1> 
                 <section className='projects  px-52 w-[100%] h-fit bg-slate-900   '>
+                    <h1 className='contactme text-6xl  text-left  rounded-md  py3  font-bold'> <span className='text-teal-200 '>My </span>Projects </h1> <br />
                     <div className='flex flex-wrap py-8 justify-center       gap-3'>
                         {/*  */}
                         <div className="mt-6 w-80   bg-white rounded-lg shadow-md overflow-hidden">
@@ -133,13 +207,13 @@ export const FirstSection = () => {
                             <div className="bg-gray-100 px-6 py-4">
                                 <a href="#" className="inline-block text-blue-800">
                                     <button className="flex items-center gap-2 text-sm focus:outline-none">
-                                        Learn More
+                                        view website
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                         </svg>
                                     </button>
                                 </a>
-                                    <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
+                                <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
                             </div>
                         </div>
                         {/*  */}
@@ -155,13 +229,13 @@ export const FirstSection = () => {
                             <div className="bg-gray-100 px-6 py-4">
                                 <a href="#" className="inline-block text-blue-800">
                                     <button className="flex items-center gap-2 text-sm focus:outline-none">
-                                        Learn More
+                                        view website
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                         </svg>
                                     </button>
                                 </a>
-                                    <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
+                                <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
                             </div>
                         </div>
                         {/*  */}
@@ -177,13 +251,13 @@ export const FirstSection = () => {
                             <div className="bg-gray-100 px-6 py-4">
                                 <a href="#" className="inline-block text-blue-800">
                                     <button className="flex items-center gap-2 text-sm focus:outline-none">
-                                        Learn More
+                                        view website
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                         </svg>
                                     </button>
                                 </a>
-                                    <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
+                                <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
                             </div>
                         </div>
                         {/*  */}
@@ -199,13 +273,13 @@ export const FirstSection = () => {
                             <div className="bg-gray-100 px-6 py-4">
                                 <a href="#" className="inline-block text-blue-800">
                                     <button className="flex items-center gap-2 text-sm focus:outline-none">
-                                        Learn More
+                                        view website
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                         </svg>
                                     </button>
                                 </a>
-                                    <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
+                                <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
                             </div>
                         </div>
                         {/*  */}
@@ -221,13 +295,13 @@ export const FirstSection = () => {
                             <div className="bg-gray-100 px-6 py-4">
                                 <a href="#" className="inline-block text-blue-800">
                                     <button className="flex items-center gap-2 text-sm focus:outline-none">
-                                        Learn More
+                                        view website
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                         </svg>
                                     </button>
                                 </a>
-                                    <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
+                                <button className='text-blue-800 ml-36  text-lg  '> <FaGithub /></button>
                             </div>
                         </div>
                     </div>
@@ -236,7 +310,7 @@ export const FirstSection = () => {
                 {/* contact */}
                 <section className='contact' >
                     <div className=' px-40 bg-slate-900 w-[100%] h-[100vh]'>
-                        <h1 className='contactme text-6xl  text-left  rounded-md  py3  font-bold'>Contact <span className='text-teal-200 '>Me </span></h1> <br />
+                        <h1 className='contactme lg:text-6xl text-3xl  text-left  rounded-md  py3  font-bold'>Contact <span className='text-teal-200 '>Me </span></h1> <br />
                         <div className='container flex flex-row'>
                             <div className='right flex flex-col  b w-[50%] h-[70vh]'>
                                 <div className='text flex flex-col w-[100%] h-[28%] justify-around  '>
@@ -257,7 +331,7 @@ export const FirstSection = () => {
                                         <div className='flex justify-center items-center text-3xl  text-teal-300 rounded-full hover:text-white hover:border-2 hover:border-teal-500   hover:bg-teal-400     w-[4vw] h-[8vh]'><GrLocation />
 
                                         </div>
-                                        <h1 className='py-5 px-4 text-xl font-light   '>Csasablanca , MOROCCO</h1>
+                                        <h1 className='py-5 px-4 text-xl font-light   '>Casablanca , MOROCCO</h1>
                                     </div>
 
                                 </div>
